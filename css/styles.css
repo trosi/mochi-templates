@@ -1,0 +1,59 @@
+/* --- VARIABLES --- */
+
+html:not(.dark) {
+    --context-color: #6c757d;
+    --text-color: #212529;    
+    --note-bg: #f8f9fa;
+    --note-border: #dee2e6;
+}
+
+html.dark {
+    --context-color: #adb5bd;
+    --text-color: #e9ecef;
+    --note-bg: #2d333b;
+    --note-border: #444c56;
+}
+
+/* --- MAIN CARD STYLES --- */
+
+.context {
+    display: block;
+    color: var(--context-color) !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: -1rem;
+}
+
+.question {
+    color: var(--text-color) !important;
+    font-size: 1rem;
+}
+
+.answer {
+    color: var(--text-color) !important;
+    font-size: 1rem;
+}
+
+.notes {
+    color: var(--context-color) !important;
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-bottom: -1.5rem;
+}
+
+.notes::before {
+    content: "Notes:";
+    font-weight: 700;
+}
+
+.source {
+    color: var(--context-color);
+    font-size: 0.7rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.source::before {
+    content: "Source:";
+    font-weight: 700;
+}
